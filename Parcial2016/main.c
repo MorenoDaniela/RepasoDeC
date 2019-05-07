@@ -6,6 +6,7 @@
 #include "funciones.h"
 #include "validaciones.h"
 #include <string.h>
+#include <stdio_ext.h>//para linux
 #define MAX_SOCIOS 10
 #define MAX_LLAMADOS 10
 #define MAX_AMBULANCIAS 10
@@ -49,6 +50,35 @@ int main()
     asociados[2].edad=53;
     asociados[2].isEmpty=0;
     asociados[2].idAsociado=2;
+
+    llamadas[0].idAsociado=2;
+    llamadas[0].idAmbulancia=1;
+    llamadas[0].tiempo=22.50;
+    llamadas[0].motivo=0;
+    llamadas[0].estado=1;
+    llamadas[0].idLlamada=2;
+
+    llamadas[1].idAsociado=0;
+    llamadas[1].idAmbulancia=2;
+    llamadas[1].tiempo=22.50;
+    llamadas[1].motivo=0;
+    llamadas[1].estado=1;
+    llamadas[1].idLlamada=0;
+
+    llamadas[2].idAsociado=1;
+    llamadas[2].idAmbulancia=3;
+    llamadas[2].tiempo=22.50;
+    llamadas[2].motivo=0;
+    llamadas[2].estado=1;
+    llamadas[2].idLlamada=1;
+
+    llamadas[3].idAsociado=0;
+    llamadas[3].idAmbulancia=4;
+    llamadas[3].tiempo=22.50;
+    llamadas[3].motivo=0;
+    llamadas[3].estado=1;
+    llamadas[3].idLlamada=3;
+
     flag=1;//sacar bandera para ingresar datos
 
     //fin probar
@@ -60,7 +90,8 @@ int main()
                "6-Nombre y apellido del asociado con mas llamadas.\n"
                "7-Motivos mas recurrentes y cantidad.\n"
                "8-Motivo que mas demora.\n9-Salir\n","Error, opcion no valida.\n",1,9,REINTENTOS,&opcion);
-               system("cls");//system("clear");
+               //system("cls");//
+               system("clear");
 
                switch(opcion)
                {
@@ -155,10 +186,22 @@ int main()
                         }
                     break;
                     case 6:
-
+                        if (flag==1)
+                        {
+                            socioConMasLlamadas(llamadas,asociados,MAX_SOCIOS, MAX_LLAMADOS);
+                        }else
+                            {
+                                printf("No hay asociados, por lo tanto no hay socio con mas llamadas.\n");
+                            }
                     break;
                     case 7:
-
+                        if (flag==1)
+                        {
+                            motivoMasRecurrente(llamadas,MAX_LLAMADOS);
+                        }else
+                            {
+                            printf("No hay llamadas, por lo tanto no se pueden mostrar motivos.");
+                            }
                     break;
                     case 8:
 

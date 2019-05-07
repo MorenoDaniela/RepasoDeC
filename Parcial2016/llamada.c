@@ -109,4 +109,75 @@ void dos_print(Llamada* call, int limite)
         }
     }
 }
+
+int motivoMasRecurrente(Llamada* call,int limite)
+{
+    int i;
+    int contadorInfarto=0;
+    int contadorAcv=0;
+    int contadorGripe=0;
+
+    for (i=0;i<limite;i++)
+    {
+        if (call[i].estado==1)
+        {
+            if (call[i].motivo==0)
+            {
+                contadorInfarto++;
+            }
+
+            if (call[i].motivo==1)
+            {
+                contadorAcv++;
+            }
+
+            if(call[i].motivo==2)
+            {
+                contadorGripe++;
+            }
+        }
+    }
+
+    printf("\n%d personas llamaron con motivo infarto.\n",contadorInfarto);
+    printf("\n%d personas llamaron con motivo acv.\n",contadorAcv);
+    printf("\n%d personas llamaron con motivo gripe.\n",contadorGripe);
+
+    if(contadorGripe>contadorAcv && contadorGripe>contadorInfarto)
+    {
+        printf("El motivo mas recurrente fue la gripe.\n");
+    }
+
+    if (contadorAcv>contadorGripe && contadorAcv>contadorInfarto)
+    {
+        printf("El motivo mas recurrente fue el acv.\n");
+
+    }
+    if(contadorInfarto>contadorAcv && contadorInfarto>contadorGripe)
+    {
+        printf("El motivo mas recurrente fue el infarto.\n");
+    }
+    return 0;
+}
+
+int socioConMasLlamadas(Llamada* call,Asociado* socios,int limiteSocios, int limiteCall)
+{
+    int i;
+    int contador;
+    //char buffer;
+
+    for (i=0;i<limiteCall;i++)
+    {
+        if (socios[i].idAsociado == call[i].idAsociado)
+        {
+            //buffer=socios[i].nombre;
+            contador++;
+            printf("\nEl socio que mas llamados hizo fue: %s \n",socios[i].nombre);
+            printf("Su apellido es: %s \n",socios[i].apellido);
+
+        }
+    }
+    return 0;
+}
+
+
 #endif // LLAMADA_C_INCLUDED

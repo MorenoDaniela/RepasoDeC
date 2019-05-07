@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdio_ext.h>//para linux
 #include "funciones.h"
 #define REINTENTOS 3
 int uno_initStruct(Asociado* socios, int limite)
@@ -42,7 +43,7 @@ int uno_findEmpty (Asociado* socios,int limite, int* resultado)
 int uno_alta(Asociado* socios,int lugarVacio,int id, int limite)
 {
     int retorno=-1;
-    fflush(stdin);
+    __fpurge(stdin);//fflush(stdin);
     if (getName("\nIngrese nombre: \n","Error, nombre no valido.\n",3,30,REINTENTOS,socios[lugarVacio].nombre)==0 &&
         getApellido("\nIngrese apellido: \n","Error, apellido no valido.\n",3,30,REINTENTOS,socios[lugarVacio].apellido)==0 &&
         getDni("\nIngrese dni: \n","Error, dni no valido.\n",7,9,REINTENTOS,socios[lugarVacio].dni)==0&&
@@ -164,8 +165,10 @@ int uno_modificar(char* msj,Asociado* socios,int limite)
             {
                 getInt("1-Modificar nombre. \n2-Modificar apellido.\n3-Modificar dni.\n4-Modificar edad.\n"
                 "5-Salir de modificacion.\n","Opcion no valida\n",1,5,REINTENTOS,&opcion);
-                system("cls");//system("clear");
-                fflush(stdin);//__fpurge(stdin);
+                //system("cls");//
+                system("clear");
+                //fflush(stdin);//
+                __fpurge(stdin);
                 switch(opcion)
                 {
                     case 1:

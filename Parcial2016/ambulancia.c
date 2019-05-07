@@ -32,8 +32,9 @@ int tres_altaAmbulancia(Ambulancia* amb,Llamada* call,int lugarVacio,int id,int 
     posLlamada=dos_getId("Ingrese el id de la llamada para poder asignar una ambulancia.\n",call,limiteCall);
     if (posLlamada!=-1)
     {
-        if (getFloat("Ingrese registro de la hora en la que se esta asignando la ambulancia. Ejemplo: 12.30(Minimo 00.00 maximo 23.59)\n",
-                     "Error, hr no valida.\n",00.00,23.59,REINTENTOS,&call[lugarVacio].tiempo)==0)
+        if (getFloat("Ingrese registro de la hora en la que se esta asignando la ambulancia."
+            "Ejemplo: 12.30(Minimo 00.00 maximo 23.59)\n",
+            "Error, hr no valida.\n",00.00,23.59,REINTENTOS,&call[lugarVacio].tiempo)==0)
         {
             call[posLlamada].estado=0;
             retorno=0;

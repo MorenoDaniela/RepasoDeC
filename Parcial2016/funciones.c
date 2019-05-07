@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <stdio_ext.h>
 int getInt(char *msj, char *errorMsj, int minimo, int maximo, int reintentos, int *resultado)
 {
     int retorno = -1;
@@ -64,8 +64,8 @@ int getChar(char *msj, char *errorMsj, char minimo, char maximo, int reintentos,
         do
         {
             printf("%s", msj);
-            fflush(stdin);
-            //__fpurge(stdin); para linux _____  //fflush(stdin); para windows
+            //fflush(stdin)para windows
+            __fpurge(stdin);
             scanf("%c", &buffer);
             if(isValidChar(buffer, minimo, maximo))
             {

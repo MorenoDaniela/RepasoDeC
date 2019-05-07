@@ -6,6 +6,8 @@
 	<string.h>
 	"funciones.h"
 
+1557256853 .h"
+
 1557256639 source:c:\users\nick\desktop\workspace\parcial2016\llamada.c
 	"llamada.h"
 	"asociado.h"
@@ -24,11 +26,15 @@
 	"validaciones.h"
 	<string.h>
 
+1557077147 
+
 1557213449 source:c:\users\nick\desktop\workspace\parcial2016\validaciones.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	"validaciones.h"
+
+1557213449 nes.h"
 
 1557077147 source:c:\users\nick\desktop\workspace\parcial2016\funciones.c
 	"validaciones.h"
@@ -40,6 +46,8 @@
 
 1557255265 c:\users\nick\desktop\workspace\parcial2016\llamada.h
 	"asociado.h"
+
+1557255265 h"
 
 1557003552 c:\users\nick\desktop\workspace\parcial2016\funciones.h
 
@@ -56,4 +64,67 @@
 
 1557256845 c:\users\nick\desktop\workspace\parcial2016\ambulancia.h
 	"llamada.h"
+
+1557256845 "
+
+1557268133 source:/home/alumno/Moreno/RepasoDeC/Parcial2016/ambulancia.c
+	"ambulancia.h"
+	"llamada.h"
+	"asociado.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1557264977 /home/alumno/Moreno/RepasoDeC/Parcial2016/ambulancia.h
+	"llamada.h"
+
+1557270529 /home/alumno/Moreno/RepasoDeC/Parcial2016/llamada.h
+	"asociado.h"
+
+1557264977 /home/alumno/Moreno/RepasoDeC/Parcial2016/asociado.h
+
+1557264977 /home/alumno/Moreno/RepasoDeC/Parcial2016/funciones.h
+
+1557269983 source:/home/alumno/Moreno/RepasoDeC/Parcial2016/asociado.c
+	"asociado.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio_ext.h>
+	"funciones.h"
+
+1557266427 source:/home/alumno/Moreno/RepasoDeC/Parcial2016/funciones.c
+	"validaciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio_ext.h>
+
+1557264977 /home/alumno/Moreno/RepasoDeC/Parcial2016/validaciones.h
+
+1557271478 source:/home/alumno/Moreno/RepasoDeC/Parcial2016/llamada.c
+	"llamada.h"
+	"asociado.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1557270643 source:/home/alumno/Moreno/RepasoDeC/Parcial2016/main.c
+	<stdio.h>
+	<stdlib.h>
+	"asociado.h"
+	"llamada.h"
+	"ambulancia.h"
+	"funciones.h"
+	"validaciones.h"
+	<string.h>
+	<stdio_ext.h>
+
+1557264977 source:/home/alumno/Moreno/RepasoDeC/Parcial2016/validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones.h"
 

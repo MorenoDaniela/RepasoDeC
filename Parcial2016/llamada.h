@@ -16,5 +16,7 @@ int dos_findEmpty (Llamada* call,int limite, int* resultado);
 int dos_initStruct(Llamada* call, int limite);
 int dos_getId(char*msj,Llamada* call,int limite);
 void dos_print(Llamada* call, int limite);
+int motivoMasRecurrente(Llamada* call,int limite);
+int socioConMasLlamadas(Llamada* call,Asociado* socios,int limiteSocios, int limiteCall);
 
 #endif // LLAMADA_H_INCLUDED
