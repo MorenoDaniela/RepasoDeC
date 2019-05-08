@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1557276571 source:/home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/funciones.c
+	<string.h>
+	<stdio_ext.h>
+	"validaciones.h"
+
+1557276292 source:/home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/libros.c
+	"libros.h"
+
+1557275889 source:/home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/prestamos.c
+
+1557275889 source:/home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/socios.c
+
+1557275889 source:/home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/validaciones.c
+	<string.h>
+	"validaciones.h"
+
+1557275889 /home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/validaciones.h
+
+1557277625 source:/home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/autores.c
+	"funciones.h"
+	"validaciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio_ext.h>
+	"autores.h"
+
+1557275889 /home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/funciones.h
+
+1557277201 /home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/autores.h
+
+1557277201 source:/home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+	"validaciones.h"
+	"autores.h"
+	"libros.h"
+	"socios.h"
+	<stdio_ext.h>
+
+1557276292 /home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/libros.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1557275889 /home/alumno/Moreno/RepasoDeC/parcial2019-/parcial2019/socios.h
+
