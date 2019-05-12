@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1557687860 source:c:\users\nick\desktop\workspace\librosfinal\funciones.c
+	"validaciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1557687860 c:\users\nick\desktop\workspace\librosfinal\validaciones.h
+
+1557694197 source:c:\users\nick\desktop\workspace\librosfinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"autor.h"
+	"libros.h"
+	"socios.h"
+	"prestamo.h"
+	"funciones.h"
+
+1557687860 source:c:\users\nick\desktop\workspace\librosfinal\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones.h"
+
+1557642761 source:c:\users\nick\desktop\workspace\librosfinal\autor.c
+	"autor.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1557642192 c:\users\nick\desktop\workspace\librosfinal\autor.h
+
+1557687860 c:\users\nick\desktop\workspace\librosfinal\funciones.h
+
+1557643113 c:\users\nick\desktop\workspace\librosfinal\libros.h
+
+1557643113 source:c:\users\nick\desktop\workspace\librosfinal\libros.c
+	"autor.h"
+	"libros.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1557694978 source:c:\users\nick\desktop\workspace\librosfinal\socios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"socios.h"
+	"funciones.h"
+
+1557687860 c:\users\nick\desktop\workspace\librosfinal\socios.h
+
+1557694956 source:c:\users\nick\desktop\workspace\librosfinal\prestamo.c
+	"autor.h"
+	"prestamo.h"
+	"libros.h"
+	"socios.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1557693845 c:\users\nick\desktop\workspace\librosfinal\prestamo.h
+	"libros.h"
+	"socios.h"
+
