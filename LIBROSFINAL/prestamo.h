@@ -24,6 +24,6 @@ int cuatro_getId(char*msj,Prestamo* arrayP,int limite);
 int cuatro_baja(Prestamo* arrayP,int limite);
 //int cuatro_modificar(Prestamo* arrayP,Autor* arrayA,int limiteAutor, int limitePrestamo);
 int cuatro_ordenarTitulo(Prestamo* arrayP,int limite);
-//void harcodearPrestamos(Prestamo* arrayP, int limite);
+void harcodearPrestamos(Prestamo* arrayP, int limite);
 
 #endif // PRESTAMO_H_INCLUDED

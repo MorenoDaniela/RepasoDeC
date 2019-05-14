@@ -10,7 +10,7 @@ int getTelefono (char* msg, char* msgError,int minimo, int maximo,int reintentos
 int getName (char* msj, char* errorMsj, int minimo, int maximo, int reintentos, char* resultado);
 int getApellido (char* msj, char* errorMsj, int minimo, int maximo, int reintentos, char* resultado);
 int getString(char* msj, char* errorMsj,int minimo, int maximo, int reintentos, char* resultado);
-//int getSexo(char *msj, char *errorMsj, int minimo, int maximo, int reintentos, char* resultado);
+int getSex(char *mensaje, char *mensajeError, char minimo, char maximo, int reintentos, char *resultado);
 int getEmail(char* msj, char* msjError, int minimo, int maximo, int reintentos, char* resultado);
 int getAlfanumerico(char* msj, char* msjError, int minSize, int maxSize, int reintentos, char* resultado);
 

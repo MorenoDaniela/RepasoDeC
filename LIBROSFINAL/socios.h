@@ -6,9 +6,9 @@ typedef struct
     int idSocio;
     char nombre[31];
     char apellido[31];
-    int sexo;
-    char telefono[10];
-    char email[50];
+    char sexo;
+    char telefono[16];
+    char email[32];
     int isEmpty;//estado habilitado 0 no habilitado 1
 }Socio;
 

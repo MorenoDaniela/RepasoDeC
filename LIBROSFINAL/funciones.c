@@ -114,6 +114,7 @@ int getName (char* msj, char* errorMsj, int minimo, int maximo, int reintentos, 
     char bufferStr[4096];
     if(msj != NULL && errorMsj != NULL && minimo < maximo && reintentos>=0 && resultado != NULL)
     {
+
         if(!getString(msj,errorMsj,minimo,maximo,reintentos,bufferStr))
         {
             if(isValidName(bufferStr))
@@ -124,6 +125,7 @@ int getName (char* msj, char* errorMsj, int minimo, int maximo, int reintentos, 
             else
             {
                 printf (errorMsj);
+                reintentos--;
             }
         }
     }
@@ -136,18 +138,19 @@ int getApellido (char* msj, char* errorMsj, int minimo, int maximo, int reintent
     char bufferStr[4096];
     if(msj != NULL && errorMsj != NULL && minimo < maximo && reintentos>=0 && resultado != NULL)
     {
-        if(!getString(msj,errorMsj,minimo,maximo,reintentos,bufferStr))
-        {
-            if(isValidApellido(bufferStr))
+            if(!getString(msj,errorMsj,minimo,maximo,reintentos,bufferStr))
             {
-                strncpy(resultado, bufferStr,maximo);
-                retorno = 0;
+                if(isValidApellido(bufferStr))
+                {
+                    strncpy(resultado, bufferStr,maximo);
+                    retorno = 0;
+                }
+                else
+                {
+                    printf (errorMsj);
+                    reintentos--;
+                }
             }
-            else
-            {
-                printf (errorMsj);
-            }
-        }
     }
     return retorno;
 }
@@ -194,13 +197,13 @@ int getCuit (char* msj, char* msjError,int minimo, int maximo,int reintentos,cha
 
 int getTelefono (char* msj, char* msjError,int minimo, int maximo,int reintentos,char* resultado)
 {
-    char bufferString[20];
+    char bufferString[maximo];
     int retorno=-1;
     while(retorno==-1 && reintentos>0)
     {
         if(!getString(msj,msjError,minimo,maximo,reintentos,bufferString)&&(resultado!=NULL)&&(isTelefono(bufferString)))
         {
-            strncpy(resultado,bufferString,20);
+            strncpy(resultado,bufferString,maximo);
             retorno=0;
         }
         else
@@ -212,33 +215,40 @@ int getTelefono (char* msj, char* msjError,int minimo, int maximo,int reintentos
     return retorno;
 }
 
-/*int getSexo(char *msj, char *errorMsj, int minimo, int maximo, int reintentos, char *resultado)
+int getSex(char *mensaje, char *mensajeError, char minimo, char maximo, int reintentos, char *resultado)
 {
     char buffer;
     int retorno = -1;
-    if(msj != NULL && errorMsj != NULL && maximo >= minimo && reintentos >= 0)
+    //int control;
+
+    if(mensaje != NULL && mensajeError != NULL && resultado != NULL && maximo >= minimo && reintentos >= 0)
     {
         do
         {
-            printf("%s", msj);
-            fflush(stdin);//
+            fflush (stdin);
             //__fpurge(stdin);
-            //scanf("%c", &buffer);
-            fgets(&buffer,1,stdin);
-            if(!isValidSexo(buffer))
+            printf("%s", mensaje);
+            scanf("%c", &buffer);
+
+            //printf("Lo ingresado es: %c\n\n", buffer);
+
+            //control = isValidSex(buffer, maximo, minimo);
+            //printf("isValidSex: %d\n\n", control);
+            if(isValidSex(buffer, maximo, minimo))
             {
                 *resultado = buffer;
                 retorno = 0;
                 break;
-            }else
-            {
-                printf("%s", errorMsj);
             }
-            reintentos--;
-        }while(reintentos >= 0);
+            else
+            {
+                printf("%s", mensajeError);
+                reintentos--;
+            }
+        }while(reintentos>=0);
     }
     return retorno;
-}*/
+}
 
 int getEmail(char* msj, char* msjError, int minimo, int maximo, int reintentos, char* resultado)
 {

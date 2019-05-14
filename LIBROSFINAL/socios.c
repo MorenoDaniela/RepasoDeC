@@ -48,7 +48,7 @@ int tres_alta(Socio* arrayS,int *id, int limite)
 {
     int retorno=-1;
     int lugarVacio;
-    int auxSexo;
+    char auxSexo;
     //char letra;
     //__fpurge(stdin);
     fflush(stdin);
@@ -57,14 +57,14 @@ int tres_alta(Socio* arrayS,int *id, int limite)
     {
         if(tres_findEmpty(arrayS,limite,&lugarVacio)!=-1)
         {
-            if (getName("\nIngrese nombre del socio: \n","Error, nombre no valido.\n",3,30,TRIES,arrayS[lugarVacio].nombre)==0 &&
-                getApellido("\nIngrese apellido del socio: \n","Error, apellido no valido.\n",3,30,TRIES,arrayS[lugarVacio].apellido)==0 &&
-                getInt("\nIngrese sexo (1=masculino 2=femenino) : \n","Error, sexo no valido.\n",1,2,TRIES,&arrayS[lugarVacio].sexo)==0 &&
-                getTelefono("\nIngrese telefono: \n","Error, telefono no valido\n",8,12,TRIES,arrayS[lugarVacio].telefono)==0 &&
-                getEmail("\nIngrese mail: ","Error, mail no valido.\n",10,50,TRIES,arrayS[lugarVacio].email)==0)
+            if (getName("\nIngrese nombre del socio: \n","Error, nombre no valido.\n",3,32,TRIES,arrayS[lugarVacio].nombre)==0 &&
+                getApellido("\nIngrese apellido del socio: \n","Error, apellido no valido.\n",3,32,TRIES,arrayS[lugarVacio].apellido)==0 &&
+                getSex("\nIngrese sexo (M=masculino F=femenino) : \n","Error, sexo no valido.\n",'f','m',TRIES,&auxSexo)==0 &&
+                getTelefono("\nIngrese telefono: \n","Error, telefono no valido\n",8,11,TRIES,arrayS[lugarVacio].telefono)==0 &&
+                getEmail("\nIngrese mail: ","Error, mail no valido.\n",10,32,TRIES,arrayS[lugarVacio].email)==0)
             {
 
-                //arrayS[lugarVacio].sexo=auxSexo;
+                arrayS[lugarVacio].sexo=auxSexo;
                 arrayS[lugarVacio].idSocio=*id;
                 (*id)++;
                 arrayS[lugarVacio].isEmpty=0;
@@ -86,20 +86,19 @@ void tres_print(Socio* arrayS, int limite)
 {
     int i;
 
-    printf ("\n*** Lista ***\n");
-
     for (i=0;i<=limite;i++)
     {
         if (arrayS[i].isEmpty==0)
         {
+            printf ("\n*** Lista ***\n");
             printf ("\n********************************************");
             printf ("\nNombre del socio: %s ",arrayS[i].nombre);
             printf ("\nApellido del socio: %s ",arrayS[i].apellido);
-            printf ("\nSexo: %d",arrayS[i].sexo);
+            printf ("\nSexo: %c",arrayS[i].sexo);
             printf ("\nId del socio: %d ",arrayS[i].idSocio);
             //printf ("\nPosicion: %d ",i);
-            printf ("\nEmail: %s",arrayS[i].email);
             printf ("\nTelefono: %s",arrayS[i].telefono);
+            printf ("\nEmail: %s",arrayS[i].email);
             //printf ("\nEstado : %d \n",arrayS[i].isEmpty);
         }
     }
@@ -185,7 +184,7 @@ int tres_modificar(Socio* arrayS,int limite)
     int retorno=-1;
     int posicion;
     int opcion;
-    int auxSexo;
+    char auxSexo;
     /*char auxNombre;
     char auxApellido;
     char auxDni;
@@ -196,9 +195,9 @@ int tres_modificar(Socio* arrayS,int limite)
         tres_print(arrayS,limite);
         //tres_findById("Ingrese el id del autor a modificar",arrayS,&posicion,limite);
         //posicion=tres_getId(msj,arrayS,limite);
-        if (tres_findById("Ingrese el id del autor a modificar: \n",arrayS,&posicion,limite)==0)
+        if (tres_findById("Ingrese el id del socio a modificar: \n",arrayS,&posicion,limite)==0)
         {
-            while (opcion!=6)
+            do
             {
                 getInt("\n1-Modificar nombre. \n2-Modificar apellido.\n3-Modificar sexo.\n4-Modificar mail.\n"
                        "5-Modificar telefono.\n6-Salir de modificacion.\n","Opcion no valida\n",1,6,TRIES,&opcion);
@@ -230,7 +229,7 @@ int tres_modificar(Socio* arrayS,int limite)
                         }
                         break;
                     case 3:
-                    if (getInt("Ingrese nuevo sexo (1-masculino, 2=femenino : \n","Error, sexo no valido.\n",1,2,TRIES,&auxSexo)==0)
+                    if (getSex("Ingrese nuevo sexo (1-masculino, 2=femenino : \n","Error, sexo no valido.\n",1,2,TRIES,&auxSexo)==0)
                     {
                         arrayS[posicion].sexo=auxSexo;
                         //strncpy(arrayS[posicion].apellido,&auxApellido,sizeof(auxApellido));
@@ -263,7 +262,7 @@ int tres_modificar(Socio* arrayS,int limite)
                     case 6:
                         break;
                 }//fin switch
-            }
+            }while (opcion!=6);
             retorno=0;//fin while
         }else
             printf("\nNo se encontro el id.\n");
@@ -310,7 +309,7 @@ void harcodearSocios(Socio* arrayS, int limite)
 {
     strcpy(arrayS[0].nombre,"BBB");
     strcpy(arrayS[0].apellido,"DDD");
-    arrayS[0].sexo=2;
+    arrayS[0].sexo='f';
     //strcpy(arrayS[0].sexo,"f");
     strcpy(arrayS[0].email,"pepe_pepe@hotmail.com");
     strcpy(arrayS[0].telefono,"11-45213652");
@@ -319,7 +318,7 @@ void harcodearSocios(Socio* arrayS, int limite)
 
     strcpy(arrayS[1].nombre,"AAA");
     strcpy(arrayS[1].apellido,"MMM");
-    arrayS[0].sexo=2;
+    arrayS[0].sexo='m';
     //strcpy(arrayS[1].sexo,"m");
     strcpy(arrayS[1].email,"ariel_pepe@gmail.com");
     strcpy(arrayS[1].telefono,"4293-7778");
@@ -328,7 +327,7 @@ void harcodearSocios(Socio* arrayS, int limite)
 
     strcpy(arrayS[2].nombre,"BBB");
     strcpy(arrayS[2].apellido,"FFFF");
-    arrayS[0].sexo=1;
+    arrayS[0].sexo='f';
     //strcpy(arrayS[2].sexo,"f");
     strcpy(arrayS[2].email,"julian_pepe@hotmail.com");
     strcpy(arrayS[2].telefono,"42-25411778");
@@ -337,7 +336,7 @@ void harcodearSocios(Socio* arrayS, int limite)
 
     strcpy(arrayS[3].nombre,"BBB");
     strcpy(arrayS[3].apellido,"AAA");
-    arrayS[0].sexo=2;
+    arrayS[0].sexo='m';
     //strcpy(arrayS[3].sexo,"m");
     strcpy(arrayS[3].email,"marina_pepe@hotmail.com");
     strcpy(arrayS[3].telefono,"41-11452778");

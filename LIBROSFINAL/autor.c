@@ -79,12 +79,11 @@ void uno_print(Autor* arrayA, int limite)
 {
     int i;
 
-    printf ("\n*** Lista ***\n");
-
     for (i=0;i<=limite;i++)
     {
         if (arrayA[i].isEmpty==0)
         {
+            printf ("\n*** Lista ***\n");
             printf ("\n********************************************");
             printf ("\nNombre del autor: %s ",arrayA[i].nombre);
             printf ("\nApellido del autor: %s ",arrayA[i].apellido);

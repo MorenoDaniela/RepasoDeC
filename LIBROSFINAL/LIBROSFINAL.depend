@@ -67,3 +67,71 @@
 	"libros.h"
 	"socios.h"
 
+1557805085 source:c:\users\pc\desktop\workspace\repasodec-master\librosfinal\autor.c
+	"autor.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1557695193 c:\users\pc\desktop\workspace\repasodec-master\librosfinal\autor.h
+
+1557758213 c:\users\pc\desktop\workspace\repasodec-master\librosfinal\funciones.h
+
+1557809376 source:c:\users\pc\desktop\workspace\repasodec-master\librosfinal\funciones.c
+	"validaciones.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1557806716 c:\users\pc\desktop\workspace\repasodec-master\librosfinal\validaciones.h
+
+1557805086 source:c:\users\pc\desktop\workspace\repasodec-master\librosfinal\libros.c
+	"autor.h"
+	"libros.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1557695193 c:\users\pc\desktop\workspace\repasodec-master\librosfinal\libros.h
+
+1557803819 source:c:\users\pc\desktop\workspace\repasodec-master\librosfinal\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"autor.h"
+	"libros.h"
+	"socios.h"
+	"prestamo.h"
+	"funciones.h"
+
+1557810933 c:\users\pc\desktop\workspace\repasodec-master\librosfinal\socios.h
+
+1557759551 c:\users\pc\desktop\workspace\repasodec-master\librosfinal\prestamo.h
+	"libros.h"
+	"socios.h"
+
+1557805085 source:c:\users\pc\desktop\workspace\repasodec-master\librosfinal\prestamo.c
+	"autor.h"
+	"prestamo.h"
+	"libros.h"
+	"socios.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1557810933 source:c:\users\pc\desktop\workspace\repasodec-master\librosfinal\socios.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"socios.h"
+	"funciones.h"
+
+1557810379 source:c:\users\pc\desktop\workspace\repasodec-master\librosfinal\validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validaciones.h"
+

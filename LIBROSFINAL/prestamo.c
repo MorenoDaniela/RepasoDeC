@@ -107,12 +107,11 @@ void cuatro_print(Prestamo* arrayP, int limite)
 {
     int i;
 
-    printf ("\n*** Lista ***\n");
-
     for (i=0;i<=limite;i++)
     {
         if (arrayP[i].isEmpty==0)
         {
+            printf ("\n*** Lista ***\n");
             printf ("\n********************************************");
             printf ("\nID del prestamo: %d ",arrayP[i].idPrestamo);
             printf ("\nId del socio: %d ",arrayP[i].idSocio);
@@ -311,7 +310,6 @@ void harcodearPrestamos(Prestamo* arrayP, int limite)
     arrayP[2].dia=15;
     arrayP[2].mes=9;
     arrayP[2].anio=2018;
-
 }
 
 

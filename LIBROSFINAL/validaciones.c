@@ -167,28 +167,17 @@ int isEmail(char* cadena)
     return retorno;
 }
 
-/*int isValidSexo (char letra, char minimo, char maximo)
+int isValidSex(char letra, char maximo, char minimo)
 {
     int retorno = 1;
 
-    if(letra == minimo || letra== maximo)// && letra == 'm' || letra == 'M')
+    if((letra != 'f') && (letra != 'F') && (letra != 'm') && (letra != 'M'))
     {
         retorno = 0;
     }
     return retorno;
 }
 
-int isValidSexo (char letra)
-{
-    int retorno = 1;
-
-    if(letra == 'f' || letra== 'm')// && letra == 'm' || letra == 'M')
-    {
-        retorno = 0;
-    }
-
-    return retorno;
-}*/
 
 int isValidEmail(char* cadena)
 {
@@ -205,6 +194,30 @@ int isValidEmail(char* cadena)
     }
     return retorno;
 }
+/*
+int isValidEmail(char* cadena)
+{
+    int retorno=1;  // para las funciones isValid arranco con verdadero y cambio cuando encuentro un error
+    int i;
+    int contadorArroba=0;
+    for(i=0;cadena[i]!='\0';i++)
+    {
+        if (cadena[i]=='@')
+        {
+            contadorArroba++;
+
+            if (contadorArroba<=1 && cadena[i]=='_' && cadena[i]=='-' && cadena[i]=='.' &&
+                (cadena[i]>=0 || cadena[i]<=9) && (cadena[i]>'Z' || cadena[i]<'A') &&
+                (cadena[i]>'z' || cadena[i]<'a'))
+            {
+                retorno=0;
+                break;
+            }
+        }
+
+    }
+    return retorno;
+}*/
 
 int isValidAlphanumeric(char* stringRecibido)
 {

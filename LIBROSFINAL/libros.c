@@ -88,12 +88,11 @@ void dos_print(Libro* arrayL, int limite)
 {
     int i;
 
-    printf ("\n*** Lista ***\n");
-
     for (i=0;i<=limite;i++)
     {
         if (arrayL[i].isEmpty==0)
         {
+            printf ("\n*** Lista ***\n");
             printf ("\n********************************************");
             printf ("\nTitulo del libro: %s ",arrayL[i].titulo);
             printf ("\nId del autor: %d ",arrayL[i].idAutor);

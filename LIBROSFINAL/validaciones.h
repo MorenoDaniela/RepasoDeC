@@ -10,8 +10,8 @@ int isDni (char* pString);
 int isNumber(char* pString);
 int isCuit (char* pString);
 int isTelefono (char* pString);
-//int isValidSexo (char letra);
-//int isValidSexo (char letra, char minimo, char maximo);
+int isValidSex(char letra, char maximo, char minimo);
 int isValidEmail(char* cadena);
+int isEmail(char* cadena);
 int isValidAlphanumeric(char* stringRecibido);
 #endif // VALIDACIONES_H_INCLUDED
