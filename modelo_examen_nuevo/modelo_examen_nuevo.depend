@@ -1,0 +1,143 @@
+# depslib dependency file v1.0
+1557930091 source:c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\autores.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"prestamos.h"
+	"autores.h"
+	"libros.h"
+	"socios.h"
+	"utn.h"
+
+1557928240 c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\autores.h
+
+1557934362 c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\utn.h
+
+1557931656 source:c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"autores.h"
+	"libros.h"
+	"socios.h"
+	"prestamos.h"
+	"utn.h"
+
+1557934434 source:c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+
+1557931656 source:c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\libros.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"prestamos.h"
+	"autores.h"
+	"libros.h"
+	"socios.h"
+	"utn.h"
+
+1557931656 c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\libros.h
+	"autores.h"
+
+1557714551 source:c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\fecha.c
+
+1557934550 c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\socios.h
+
+1557932988 source:c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\socios.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"prestamos.h"
+	"autores.h"
+	"libros.h"
+	"socios.h"
+	"utn.h"
+
+1557928465 c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\prestamos.h
+	"libros.h"
+	"socios.h"
+
+1557928465 source:c:\users\maría del carmen\desktop\stomboli\programacion1-clases\modelo_examen_nuevo\prestamos.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"prestamos.h"
+	"autores.h"
+	"libros.h"
+	"socios.h"
+	"utn.h"
+
+1557939066 source:c:\users\pc\desktop\workspace\stomboli\programacion1-clases-master\modelo_examen_nuevo\autores.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"prestamos.h"
+	"autores.h"
+	"libros.h"
+	"socios.h"
+	"utn.h"
+
+1557934664 c:\users\pc\desktop\workspace\stomboli\programacion1-clases-master\modelo_examen_nuevo\prestamos.h
+	"libros.h"
+	"socios.h"
+
+1557934664 c:\users\pc\desktop\workspace\stomboli\programacion1-clases-master\modelo_examen_nuevo\libros.h
+	"autores.h"
+
+1557934664 c:\users\pc\desktop\workspace\stomboli\programacion1-clases-master\modelo_examen_nuevo\autores.h
+
+1557934664 c:\users\pc\desktop\workspace\stomboli\programacion1-clases-master\modelo_examen_nuevo\socios.h
+
+1557936430 c:\users\pc\desktop\workspace\stomboli\programacion1-clases-master\modelo_examen_nuevo\utn.h
+
+1557939067 source:c:\users\pc\desktop\workspace\stomboli\programacion1-clases-master\modelo_examen_nuevo\libros.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"prestamos.h"
+	"autores.h"
+	"libros.h"
+	"socios.h"
+	"utn.h"
+
+1557939066 source:c:\users\pc\desktop\workspace\stomboli\programacion1-clases-master\modelo_examen_nuevo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"autores.h"
+	"libros.h"
+	"socios.h"
+	"prestamos.h"
+	"utn.h"
+
+1557939067 source:c:\users\pc\desktop\workspace\stomboli\programacion1-clases-master\modelo_examen_nuevo\prestamos.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"prestamos.h"
+	"autores.h"
+	"libros.h"
+	"socios.h"
+	"utn.h"
+
+1557939066 source:c:\users\pc\desktop\workspace\stomboli\programacion1-clases-master\modelo_examen_nuevo\socios.c
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+	"prestamos.h"
+	"autores.h"
+	"libros.h"
+	"socios.h"
+	"utn.h"
+
+1557936585 source:c:\users\pc\desktop\workspace\stomboli\programacion1-clases-master\modelo_examen_nuevo\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"utn.h"
+
