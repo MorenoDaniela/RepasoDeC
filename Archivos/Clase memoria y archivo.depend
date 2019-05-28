@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1558658448 source:/home/alumno/MorenoDaniela/Clase memoria y archivo/main.c
+	<stdio.h>
+	<stdlib.h>
+	"persona.h"
+	"persona.h"
+
+1558658539 /home/alumno/MorenoDaniela/Clase memoria y archivo/persona.h
+
+1558658473 source:/home/alumno/MorenoDaniela/Clase memoria y archivo/persona.c
+	"persona.h"
+	"validaciones.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
+1558653626 source:/home/alumno/MorenoDaniela/Clase memoria y archivo/validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio_ext.h>
+	"validaciones.h"
+
+1558653660 /home/alumno/MorenoDaniela/Clase memoria y archivo/validaciones.h
+
+1559086953 source:/home/alumno/Documentos/MorenoDaniela/RepasoDeC/MorenoDaniela/Clase memoria y archivo/main.c
+	<stdio.h>
+	<stdlib.h>
+	"persona.h"
+	"persona.h"
+
+1559079109 /home/alumno/Documentos/MorenoDaniela/RepasoDeC/MorenoDaniela/Clase memoria y archivo/persona.h
+
+1559079109 source:/home/alumno/Documentos/MorenoDaniela/RepasoDeC/MorenoDaniela/Clase memoria y archivo/validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio_ext.h>
+	"validaciones.h"
+
+1559079109 /home/alumno/Documentos/MorenoDaniela/RepasoDeC/MorenoDaniela/Clase memoria y archivo/validaciones.h
+
+1559086288 source:/home/alumno/Documentos/MorenoDaniela/RepasoDeC/MorenoDaniela/Clase memoria y archivo/persona.c
+	"persona.h"
+	"validaciones.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
