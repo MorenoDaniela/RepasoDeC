@@ -423,6 +423,8 @@ int inf_orquestaConMenosMusicos(Orquesta* arrayOrquesta, int limiteOrquesta, Mus
     int j;
     int contador=0;
     int indiceMaximo=1000;
+    int indiceMinimo=0;
+    int posicion;
 
     if (arrayMusico!=NULL && arrayOrquesta!=NULL && limiteMusico>0 && limiteOrquesta>0)
     {
@@ -445,14 +447,16 @@ int inf_orquestaConMenosMusicos(Orquesta* arrayOrquesta, int limiteOrquesta, Mus
                     }
                 }
 
-                if (contador<indiceMaximo)
+                if (contador>indiceMinimo && contador<indiceMaximo || contador==indiceMaximo)
                 {
                     indiceMaximo=contador;
-                    printf ("\nId de orquesta: %d. \n",arrayOrquesta[i].idOrquesta);
-                    printf ("Nombre de orquesta: %s. \n",arrayOrquesta[i].nombre);
-                    printf ("Lugar de orquesta: %s.\n",arrayOrquesta[i].lugar);
+                    posicion=i;
+
+                    printf ("\nId de orquesta: %d. \n",arrayOrquesta[posicion].idOrquesta);
+                    printf ("Nombre de orquesta: %s. \n",arrayOrquesta[posicion].nombre);
+                    printf ("Lugar de orquesta: %s.\n",arrayOrquesta[posicion].lugar);
                     printf ("Cantidad de musicos: %d\n",contador);
-                    switch (arrayOrquesta[i].tipo)
+                    switch (arrayOrquesta[posicion].tipo)
                     {
                         case 1:
                             printf ("Tipo de orquesta : Sinfonica.\n");
@@ -468,6 +472,7 @@ int inf_orquestaConMenosMusicos(Orquesta* arrayOrquesta, int limiteOrquesta, Mus
                 contador=0;
             }
         }
+
         retorno=0;
     }
     return retorno;
