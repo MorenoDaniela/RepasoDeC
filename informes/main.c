@@ -143,8 +143,6 @@ int main()
                         musicosQueNoSuperan25(musicos,MAX_MUSICO,instrumentos,MAX_INSTRUMENTO,orquestas,MAX_ORQUESTA);
                         break;
                     case 3:
-                        inf_ordenarMusicosPorIdOrquesta(musicos,MAX_MUSICO);
-                        //musicos_print(musicos,MAX_MUSICO);
                         inf_orquestasMenosDeSeisMusicos(musicos,MAX_MUSICO,orquestas,MAX_ORQUESTA);
                         break;
                     case 4:
@@ -154,8 +152,7 @@ int main()
                         inf_orquestaCompleta(musicos,orquestas,instrumentos,MAX_MUSICO,MAX_ORQUESTA,MAX_INSTRUMENTO);
                         break;
                     case 6:
-
-                        //informes_orquestaMenosMusicos(musicos,orqAux,orquestas,MAX_MUSICO);
+                        inf_orquestaConMenosMusicos(orquestas,MAX_ORQUESTA,musicos,MAX_MUSICO);
                         break;
                     case 7:
                         inf_instrumentoPorOrquesta(musicos,orquestas,MAX_MUSICO,MAX_ORQUESTA);

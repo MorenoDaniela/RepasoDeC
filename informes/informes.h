@@ -13,5 +13,5 @@ int inf_musicosNoViento(Musico* arrayMusico,Instrumento* arrayInstrumento, int l
 int inf_musicosPorApellido(Musico* arrayMusico, int limiteMusico, int orderFirst, int orderSecond);
 int inf_orquestaCompleta(Musico* arrayMusico,Orquesta* arrayOrquesta, Instrumento* arrayInstrumento, int limiteMusico,int limiteOrquesta, int limiteInstrumento);
 int inf_ordenarMusicosPorIdOrquesta(Musico* arrayMusico, int limite);
-
+int inf_orquestaConMenosMusicos(Orquesta* arrayOrquesta, int limiteOrquesta, Musico* arrayMusico, int limiteMusico);
 #endif // INFORMES_H_INCLUDED

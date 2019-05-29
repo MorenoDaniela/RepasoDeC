@@ -352,7 +352,7 @@
 
 1558483671 c:\users\pc\desktop\workspace\informes\validaciones.h
 
-1559071258 source:c:\users\pc\desktop\workspace\informes\informes.c
+1559116084 source:c:\users\pc\desktop\workspace\informes\informes.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -362,7 +362,7 @@
 	"orquesta.h"
 	"funciones.h"
 
-1559032428 c:\users\pc\desktop\workspace\informes\informes.h
+1559113487 c:\users\pc\desktop\workspace\informes\informes.h
 	"orquesta.h"
 	"instrumento.h"
 	"musico.h"
@@ -382,7 +382,7 @@
 	"instrumento.h"
 	"funciones.h"
 
-1559032733 source:c:\users\pc\desktop\workspace\informes\main.c
+1559113487 source:c:\users\pc\desktop\workspace\informes\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
