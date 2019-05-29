@@ -422,9 +422,8 @@ int inf_orquestaConMenosMusicos(Orquesta* arrayOrquesta, int limiteOrquesta, Mus
     int i;
     int j;
     int contador=0;
-    int indiceMaximo=1000;
-    int indiceMinimo=0;
-    int posicion;
+    int indiceMaximo=0;
+    int indiceMinimo=1000;
 
     if (arrayMusico!=NULL && arrayOrquesta!=NULL && limiteMusico>0 && limiteOrquesta>0)
     {
@@ -447,28 +446,32 @@ int inf_orquestaConMenosMusicos(Orquesta* arrayOrquesta, int limiteOrquesta, Mus
                     }
                 }
 
-                if (contador>indiceMinimo && contador<indiceMaximo || contador==indiceMaximo)
+                if (contador>indiceMaximo)
                 {
                     indiceMaximo=contador;
-                    posicion=i;
-
-                    printf ("\nId de orquesta: %d. \n",arrayOrquesta[posicion].idOrquesta);
-                    printf ("Nombre de orquesta: %s. \n",arrayOrquesta[posicion].nombre);
-                    printf ("Lugar de orquesta: %s.\n",arrayOrquesta[posicion].lugar);
-                    printf ("Cantidad de musicos: %d\n",contador);
-                    switch (arrayOrquesta[posicion].tipo)
+                }else if (contador<=indiceMinimo)
                     {
-                        case 1:
-                            printf ("Tipo de orquesta : Sinfonica.\n");
-                        break;
-                        case 2:
-                            printf ("Tipo de orquesta: Filarmonica.\n");
-                        break;
-                        case 3:
-                            printf ("Tipo de orquesta: Camara.\n");
-                        break;
+                        indiceMinimo=contador;
+                        printf ("\nId de orquesta: %d. \n",arrayOrquesta[i].idOrquesta);
+                        printf ("Nombre de orquesta: %s. \n",arrayOrquesta[i].nombre);
+                        printf ("Lugar de orquesta: %s.\n",arrayOrquesta[i].lugar);
+                        printf ("Cantidad de musicos: %d\n",contador);
+                        printf ("indice maximo %d\n",indiceMaximo);
+                        printf ("indice minimo %d\n",indiceMinimo);
+                        switch (arrayOrquesta[i].tipo)
+                        {
+                            case 1:
+                                printf ("Tipo de orquesta : Sinfonica.\n");
+                            break;
+                            case 2:
+                                printf ("Tipo de orquesta: Filarmonica.\n");
+                            break;
+                            case 3:
+                                printf ("Tipo de orquesta: Camara.\n");
+                            break;
+                        }
                     }
-                }
+
                 contador=0;
             }
         }
