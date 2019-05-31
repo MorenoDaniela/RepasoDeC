@@ -6,7 +6,7 @@
 
 int main()
 {
-    Persona *pArrayPersona[MAX_PERSONA];
+    Persona* pArrayPersona[MAX_PERSONA];
     //int ultimoElementoArrayPersona = 0;
     int indiceActual=0;
     char bufferId[4096];
@@ -75,7 +75,7 @@ int main()
             //Pers_newStr(bufferId,bufferNombre,bufferApellido,bufferEstado);
             pArrayPersona[indiceActual] =  Pers_newStr(bufferId,bufferNombre,bufferApellido,bufferEstado);
             indiceActual++;
-            printf ("%s- %s - %s - %s\n",bufferId,bufferNombre,bufferApellido,bufferEstado);
+            printf ("%s- %s - %s - %s \n",bufferId,bufferNombre,bufferApellido,bufferEstado);
         }
         fclose(pFile);
         fclose(pFileBkp);

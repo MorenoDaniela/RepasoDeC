@@ -47,3 +47,27 @@
 	<stdio.h>
 	<stdlib.h>
 
+1559262117 source:/home/alumno/MorenoDaniela/RepasoDeC/Archivos/main.c
+	<stdio.h>
+	<stdlib.h>
+	"persona.h"
+	"persona.h"
+
+1559261864 /home/alumno/MorenoDaniela/RepasoDeC/Archivos/persona.h
+
+1559261864 source:/home/alumno/MorenoDaniela/RepasoDeC/Archivos/persona.c
+	"persona.h"
+	"validaciones.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
+1559261864 /home/alumno/MorenoDaniela/RepasoDeC/Archivos/validaciones.h
+
+1559261864 source:/home/alumno/MorenoDaniela/RepasoDeC/Archivos/validaciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdio_ext.h>
+	"validaciones.h"
+

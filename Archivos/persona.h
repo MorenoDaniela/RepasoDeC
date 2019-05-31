@@ -32,4 +32,6 @@ int Pers_getNombre(Persona* this, char* resultado);
 int Pers_getApellido(Persona* this, char* resultado);
 int Pers_getEstado(Persona* this, int* resultado);
 
+
+int parserPersona (char* nombreFile,Persona* persona, int limite);
 #endif // PERSONA_H_INCLUDED

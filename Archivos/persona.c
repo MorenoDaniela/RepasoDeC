@@ -216,4 +216,35 @@ Persona* Pers_alta(char* nombre, char* apellido, int estado, int id)
     return retorno;
 }
 
+int parserPersona (char* nombreFile,Persona* persona, int limite)
+{
+    char aux[512];
+    char auxId[512];
+    char auxNombre[512];
+    char auxApellido[512];
+    char auxEdad[512];
+    int r;
+    int retorno=-1;
+
+    FILE* fp = fopen(nombreF,"r");
+    if (fp!=NULL)
+    {
+        retorno=0;
+        //scanf(fp,"%[[^]")
+        fgets(aux,512,fp);//saltea primera linea
+
+        do
+        {
+            r = fscanf(fp,"%[^;];%[^;];%[^;];%[^;];[^\n]\n",auxId,auxNombre,auxApellido,auxEdad);
+            if(r==4)
+            {
+                printf ("%s %s %s %s ",auxId,auxNombre,auxApellido,auxEdad);
+                retorno++;
+            }
+        }while(!feof(fp));
+
+        fclose(fp);
+    }
+    return retorno;
+}
 #endif // PERSONA_C_INCLUDED
