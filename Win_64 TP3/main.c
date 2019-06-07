@@ -40,17 +40,21 @@ int main()
                 controller_addEmployee(listaEmpleados);
                 break;
             case 4:
+                controller_editEmployee(listaEmpleados);
                 break;
             case 5:
+                controller_removeEmployee(listaEmpleados);
                 break;
             case 6:
                 controller_ListEmployee(listaEmpleados);
                 break;
             case 7:
+                controller_sortEmployee(listaEmpleados);
                 break;
             case 8:
                 break;
             case 9:
+
                 break;
         }
     }while(option != 10);

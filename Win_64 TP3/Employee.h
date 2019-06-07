@@ -33,4 +33,6 @@ int employee_getHorastrabajadasString(Employee* this, char* horasTrabajadas);
 
 int employee_setIdString(Employee* this, char* id);
 int employee_getIdString(Employee* this, char* id);
+
+int employee_compararNombre(void* this1, void* this2);
 #endif // employee_H_INCLUDED

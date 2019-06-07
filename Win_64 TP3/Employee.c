@@ -225,4 +225,22 @@ int employee_getSueldoString(Employee* this, char* sueldo)
     return retorno;
 }
 
+int employee_compararNombre(void* this1, void* this2)
+{
+    int retorno=0;
+    int comparacion;
+    char auxStr1[4096];
+    char auxStr2[4096];
+    employee_getNombre((Employee*)this1,auxStr1);
+    employee_getNombre((Employee*)this2,auxStr2);
+    comparacion= strcmp(auxStr1,auxStr2);
+    if (comparacion >0)
+    {
+        retorno=1;
+    }else if (comparacion<0)
+        {
+            retorno= -1;
+        }
 
+    return retorno;
+}

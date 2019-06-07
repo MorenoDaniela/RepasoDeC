@@ -41,13 +41,13 @@ int test_addNode(LinkedList* this, int nodeIndex,void* pElement);
 int ll_add(LinkedList* this, void* pElement);
 void* ll_get(LinkedList* this, int index);
 int ll_set(LinkedList* this, int index,void* pElement);
-int ll_remove(LinkedList* this,int index);
+int ll_remove(LinkedList* this,int index);//lo borra y hay que hay que lllamar a remove
 int ll_clear(LinkedList* this);
 int ll_deleteLinkedList(LinkedList* this);
 int ll_indexOf(LinkedList* this, void* pElement);
 int ll_isEmpty(LinkedList* this);
 int ll_push(LinkedList* this, int index, void* pElement);
-void* ll_pop(LinkedList* this,int index);
+void* ll_pop(LinkedList* this,int index);//lo borra de la lista y te devuelve un puntero a ese empleado con ese puntero llamo a controller remove
 int ll_contains(LinkedList* this, void* pElement);
 int ll_containsAll(LinkedList* this,LinkedList* this2);
 LinkedList* ll_subList(LinkedList* this,int from,int to);
